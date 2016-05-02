@@ -441,8 +441,12 @@ footer{
 	width: 100%;
 	text-align: center;
 }
+.ServiceContent ul{
+	padding: 0px 0px 0px 0px;
+}
 .ServiceContent li{
 	list-style-image: none;
+	margin-left: 0px;
 }
 .ServiceContent li a{
 	display: block;
