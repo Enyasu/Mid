@@ -446,7 +446,6 @@ footer{
 }
 .ServiceContent li{
 	list-style-image: none;
-	margin-left: 0px;
 }
 .ServiceContent li a{
 	display: block;
