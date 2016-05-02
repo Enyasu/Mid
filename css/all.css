@@ -52,39 +52,39 @@ table {
 	width: 950px;
 	margin: 0px auto;
 }
-header{
+/*header{
+	height: 100px;
+	width: 950px;
+	margin-bottom: 20px;
+	position: relative;
+}*/
+.header{
 	height: 100px;
 	width: 950px;
 	margin-bottom: 20px;
 	position: relative;
 }
 .top{
-	width: 950px;
 	height: 6px;
+	background: #292929;
 }
 .red{
-	width: 35px;
+	width: 45px;
 	height: 6px;
 	float: left;
 	background: #ce0160;
 }
 .green{
-	width: 35px;
+	width: 45px;
 	height: 6px;
 	float: left;
 	background: #a0cc05;
 }
 .blue{
-	width: 35px;
+	width: 45px;
 	height: 6px;
 	float: left;
 	background: #0192c1;
-}
-.black{
-	width: 835px;
-	height: 6px;
-	float: left;
-	background: #292929;
 }
 .logo{
 	width: 170px;
@@ -120,12 +120,11 @@ header{
 	right: 30px;
 	float: right;
 	bottom: 5px;
-	position: absolute;
+	
 }
 .menu li{
 	float: left;
-	margin-left: 40px;
-	list-style-type: none;
+	margin-left: 44px;
 	list-style: none;
 }
 .menu li a{
@@ -136,12 +135,17 @@ header{
 	font-size: 16px;
 	text-decoration: none;
 }
+.icon-bar{
+	display: block;
+    width: 22px;
+    height: 3px;
+    background-color: #b3b3b3;
+}
 .MainColor, li a:hover{
 	color: #01a5ca;
 	text-decoration: none;
 }
 .MainVisual{
-	width: 950px;
 	height: 415px;
 }
 .MainSlider{
@@ -152,51 +156,49 @@ header{
 	opacity: 0.7;
 }
 .MainTitle{
-	width: 300px;
+	width: 310px;
 	height: 415px;
 	float: left;
 	background: #292929;
 }
+.MainTitleContent{
+	padding: 45px 30px;
+}
+.MainTitle h1{
+	display: inline-block;
+	color: #01a5ca;
+	font-size: 45px;
+	margin-bottom: 20px;
+}
 .MainTitle p{
-	top: 60px;
-	left: 40px;
-	font-size: 18px;
+	font-size: 17px;
 	color: #9e9e9e;
 	line-height: 25px;
-	margin-bottom: 10px;
-	position: relative;
+	margin-bottom: 25px;
 }
-.MainButton{
-	width: 120px;
-	height: 30px;
-	top: 85px;
-	left: 40px;
-	font-weight: bold;
-	font-size: 16px;
-	color: #FFFFFF;
+.MainTitle a{
+	display: inline-block;
+	padding: 10px 20px 10px 20px;
+	font-size: 14px;
 	background: #3f3f3f;
-	position: relative;
-	padding-top: 13px;
-	padding-left: 20px;
-}
-.MainButton a{
-	font-size: 16px;
-	color: #FFFFFF;
+	color: #ffffff;
 	text-decoration: none;
 }
 .Introduction{
-	width: 870px;
+	width: 100%;
 	color: #272727;
 	background: #FFFFFF;
 	margin-top: 35px;
-	padding: 25px 30px 20px 40px;
 }
 .Introduction p {
+	padding: 25px 30px 20px 40px;
 	font-size: 17px;
 	line-height: 33px;
 }
+.ContentWrap{
+	width: 100%;
+}
 .Content{
-	width: 870px;
 	overflow: hidden;
 	background: #FFFFFF;
 	margin-top: 35px;
@@ -209,13 +211,21 @@ header{
 	float: left;
 	margin-right: 65px;
 }
+.EventContent a{
+	text-decoration: none;
+	color: black;
+}
 .EventBox{
+	float: left;
 	padding-bottom: 25px;
 }
 .EventBox img{
 	float: left;
 	margin-right: 30px;
 	border: #f4f4f4 5px solid;
+}
+.EventBox a:hover{
+	background: #f4f4f4;
 }
 .EventWrap{
 	overflow: hidden;
@@ -236,20 +246,19 @@ header{
 .SearchContent{
 	width: 225px;
 	float: left;
-	margin-top: 22px;
 }
-.SearchButton{
-	background: #dddddd;
-	width: 90px;
-	height: 30px;
+.SearchContent a{
+	background: #f4f4f4;
 	font-size: 16px;
+	margin-top: 10px;
+	display: inline-block;
+	height: 20px;
+	width: 90px;
 	color: #01a5ca;
-	position: relative;
-	margin-top: 15px;
-	padding-top: 10px;
-	padding-left: 20px;
+	text-decoration: none;
+	padding: 10px 20px;
 }
-.SearchButton:hover{
+.SearchContent a:hover{
 	background: #888888;
 	color: #FFFFFF;
 }
@@ -265,22 +274,15 @@ footer{
 	line-height: 20px;
 	padding: 30px 0 40px 0;
 }
-.MainButton a:hover{
+/*.MainButton a:hover{
 	opacity: 0.5;
-}
+}*/
 input{
 	color: #CCC;
+	width: 180px;
 	font-size: 13px;
+	border: #f4f4f4 1px solid;
 	padding: 10px 10px 10px 10px;
-	margin-top: 10px;
-}
-h1{
-	color: #01a5ca;
-	top: 50px;
-	left: 40px;
-	font-size: 45px;
-	margin-bottom: 10px;
-	position: relative;
 }
 body{
 	background-image: url('../images/bg_html.jpg');
@@ -291,4 +293,226 @@ h2{
 	padding-bottom: 15px;
 	font-size: 30px;
 	position: relative;
+}
+@media only screen and (min-width: 769px) and (max-width: 950px){
+.wrap {
+	width: 100%;
+}
+.logo{
+	float: none;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.header{
+	width: 100%;
+}
+.menu{
+	width: 100%;
+	padding-top: 20px;
+	right: auto;
+	position: relative;
+}
+.menu li{
+	text-align: center;
+	width: 16.66%;
+	margin: 0px;
+}
+.MainVisual{
+	width: 100%;
+}
+.MainSlider{
+	width: 70%;
+}
+.MainSlider img{
+	width: 100%;
+	height: auto;
+}
+.MainTitle{
+	width: 30%;
+	height: auto;
+}
+.EventContent{
+	width: 100%;
+}
+.EventBox{
+	width: 100%;
+}
+.EventBox img{
+	width: 20%;
+}
+.ServiceContent{
+	width: 63%;
+	background: #FFFFFF;
+}
+.ServiceContent li {
+	float:none;
+	padding-right: 20px;
+}
+.ServiceContent li a{
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+.ServiceContent a:hover{
+	color: #01a5ca;
+	background: #f4f4f4;
+}
+.SearchContent{
+	width: 37%;
+	background: #FFFFFF;
+	margin-top: 10px;
+}
+h2{
+	text-align: center;
+}
+footer{
+	width: 100%;
+}
+}
+@media only screen and (max-width: 768px){
+.wrap{
+	width: 100%;
+}
+.header{
+	width: 100%;
+	height: auto;
+	float: none;
+}
+.Socialmenu{
+	display: inline;
+	margin-right: 10px;
+}
+.menu{
+	width: 100%;
+	top: 100px;
+	float: none;
+	right: 0px;
+	margin-top: 10px;
+	text-align: center;
+}
+.menu li{
+	float: none;
+	margin: 0px 0px 0px 0px;
+}
+.menu li a{
+	display: block;
+	height: 30px;
+	width: 100%;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin: 5px 5px;
+	padding-top: 5px;
+	text-align: center;
+	background: #01a5ca;
+}
+.menu li a:hover{
+	color: #01a5ca;
+	background: #f4f4f4;
+}
+.MainVisual{
+	height: auto;
+	margin-bottom: 10px;
+}
+.MainVisual img{
+	width: 100%;
+}
+.MainSlider{
+	width:100%;
+	float: none;
+	height: auto;
+	margin-bottom: 10px;
+}
+.MainTitle{
+	display: none;
+}
+.Introduction{
+	width: 100%;
+	height: auto;
+	padding: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
+}
+.EventContent{
+	float: none;
+	width: 100%;
+}
+.ServiceContent{
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.ServiceContent li{
+	list-style-image: none;
+}
+.ServiceContent li a{
+	display: block;
+	padding: 5px 5px;
+	border-radius: 5%;
+	width: 100%;
+	font-size: 20px;
+	color: #f4f4f4;
+	background: #01a5ca;
+	text-align: center;
+}
+.ServiceContent a:hover{
+	color: #01a5ca;
+	background: #f4f4f4;
+}
+.SearchContent{
+	width: 100%;
+	float: none;
+	height: auto;
+	background: #ffffff;
+	padding: 10px 0px;
+	text-align: center;
+}
+footer{
+	width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+.wrap{
+	width: 100%;
+}
+.logo{
+	float: none;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.Socialmenu{
+	margin-top: 10px;
+	float: none;
+	right: 0;
+	top: 0;
+	margin-left: 40px;
+	position: relative;
+}
+.Socialmenu li{
+	right: 0;
+}
+.Socialmenu ul{
+	margin: 0 auto;
+}
+.MainVisual{
+	display: none;
+}
+.EventBox{
+	float: none;
+}
+.EventBox img{
+	float: none;
+}
+.EventWrap{
+	float: none;
+}
+.ServiceContent li a{
+	display: block;
+	padding: 5px 5px;
+	border-radius: 5%;
+	width: 100%;
+	font-size: 16px;
+	color: #f4f4f4;
+	background: #01a5ca;
+	text-align: center;
+}
 }
